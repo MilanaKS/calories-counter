@@ -17,6 +17,11 @@ inputWrapper.forEach(function(elem) {
         } else {
             resetButton.disabled = true;
         }
+        if (age.value > 0 && height.value > 0 && weight.value > 0) {
+            submitButton.disabled = false;
+        } else {
+            submitButton.disabled = true;
+        }
     });
 });
 
